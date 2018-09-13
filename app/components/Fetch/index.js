@@ -48,11 +48,9 @@ class Fetch extends Component {
           </form>
           <ul>
             {!checkFiltered.length ? (
-            ? this.state.data.map(data => (
-                <li key={data.id}>
-                  {data.id} => {data.title}
-            ))
-              ))
+            this.state.data.map(data => (
+                <li key={data.id}>{data.id} => {data.title}</li>
+            )))
             : this.state.filtered.map(data => (
                 <li key={data.id}>
                   {data.id} => {data.title}
